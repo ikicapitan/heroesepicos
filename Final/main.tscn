@@ -1,0 +1,22 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://actors/_main.tscn" type="PackedScene" id=2]
+[ext_resource path="res://actors/ShotColis.tscn" type="PackedScene" id=3]
+[ext_resource path="res://actors/BombExplos.tscn" type="PackedScene" id=4]
+[ext_resource path="res://actors/PathObjetive.tscn" type="PackedScene" id=5]
+[ext_resource path="res://actors/GameOver.tscn" type="PackedScene" id=6]
+
+[node name="main" type="Node2D" groups=[
+"main",
+]]
+
+script/script = ExtResource( 1 )
+main_elements = ExtResource( 2 )
+shot_colis = ExtResource( 3 )
+bomb_explos = ExtResource( 4 )
+cam_objetive = ExtResource( 5 )
+scn_gameover = ExtResource( 6 )
+nivel = 1
+
+

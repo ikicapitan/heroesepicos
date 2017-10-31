@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://fonts/fuente.fnt" type="BitmapFont" id=1]
+[ext_resource path="res://scripts/bomba.gd" type="Script" id=2]
+
+[node name="bomba" type="Node"]
+
+[node name="conteo" type="Label" parent="." groups=[
+"cronometro",
+]]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 484.0
+margin/top = 30.0
+margin/right = 524.0
+margin/bottom = 73.0
+custom_fonts/font = ExtResource( 1 )
+text = "0"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script/script = ExtResource( 2 )
+
+[node name="cronometro" type="Timer" parent="conteo"]
+
+process_mode = 1
+wait_time = 180.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="conteo/cronometro" to="conteo" method="_on_cronometro_timeout"]
+
+
