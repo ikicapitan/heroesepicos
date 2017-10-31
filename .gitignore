@@ -1,0 +1,14 @@
+*.sublime-*
+.idea
+.fscache
+export.cfg
+*.tmp
+*.keystore
+*~
+*.swp
+*.swo
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+*.lnk
